@@ -4,6 +4,7 @@ set smartindent
 set cindent
 set autoindent
 set tabstop=4
+colorscheme peachpuff
 
 source $VIMRUNTIME/vimrc_example.vim
 
