@@ -4,7 +4,12 @@ set smartindent
 set cindent
 set autoindent
 set tabstop=4
-colorscheme peachpuff
+colorscheme murphy
+
+if has("gui_running")
+  set lines=53
+  set columns=70
+endif
 
 source $VIMRUNTIME/vimrc_example.vim
 
