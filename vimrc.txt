@@ -4,11 +4,13 @@ set smartindent
 set cindent
 set autoindent
 set tabstop=4
-colorscheme murphy
+colorscheme elflord
+
+autocmd BufNewFile *.cpp 0r ~/template.cpp
 
 if has("gui_running")
-  set lines=53
-  set columns=70
+  set lines=50
+  set columns=80
 endif
 
 source $VIMRUNTIME/vimrc_example.vim
@@ -16,7 +18,7 @@ source $VIMRUNTIME/vimrc_example.vim
 set hls
 set is
 set cb=unnamed
-set gfn=Monospace:h10
+set guifont=Tlwg\ Typo\ 15
 cd ~/c
 
 inoremap { {}<Left>
